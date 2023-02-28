@@ -5,4 +5,116 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  padding: 2.5rem 2.5rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 3rem;
+  height: 3rem;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  width: 70%;
+}
+header nav .fontChange {
+  width: 60%;
+  border-right: 0.1rem solid red;
+}
+header nav .fontChange .fontBtn {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding-right: 1.5rem;
+}
+header nav .fontChange .fontBtn p {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+}
+header nav .fontChange .fontBtn img {
+  width: 1.5rem;
+  height: 1rem;
+}
+header nav .fontChange ul {
+  display: none;
+}
+header nav .modeChange {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 40%;
+  padding-left: 1.5rem;
+}
+header nav .modeChange .switch {
+  position: relative;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+header nav .modeChange .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+header nav .modeChange .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(117, 117, 117);
+  transition: 0.5s;
+  border-radius: 2rem;
+}
+header nav .modeChange .switch .slider:before {
+  position: absolute;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  left: 0.25rem;
+  bottom: 0.25rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+header nav .modeChange .switch svg {
+  position: absolute;
+  bottom: 0;
+  right: -3rem;
+}
+header nav .modeChange .switch input:checked + .slider {
+  background-color: rgb(164, 69, 237);
+}
+header nav .modeChange .switch input:checked + .slider:before {
+  transform: translateX(2rem);
+}
+header nav .modeChange .switch input:checked ~ svg path {
+  stroke: rgb(164, 69, 237);
+}
+header nav .modeChange img {
+  width: 2rem;
+  height: 2rem;
+}
+
 /*# sourceMappingURL=index.css.map */
