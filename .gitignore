@@ -21,3 +21,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# vercel
+.vercel
+
+# typescript 
+*.tsbuildinfo
+next-env.d.ts
+
+# next-sitemap
+robots.txt
+sitemap.xml
+sitemap-*.xml
+
+*.sketch
+*.fig
+*.xd
+.prettierignore
